@@ -1,0 +1,36 @@
+{
+  "name": "website-mean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandodelaconcha/website-mean.git"
+  },
+  "author": "Fernando de la Concha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandodelaconcha/website-node/issues"
+  },
+  "homepage": "https://github.com/fernandodelaconcha/website-mean#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "jsonwebtoken": "^7.4.3",
+    "mongoose": "^4.11.7",
+    "mongoose-title-case": "0.0.4",
+    "mongoose-validator": "^1.2.5",
+    "morgan": "^1.8.2",
+    "nodemailer": "^4.0.1",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-twitter": "^1.0.4"
+  }
+}
