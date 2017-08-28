@@ -21,7 +21,7 @@ app.use(express.static(__dirname + '/public')); // Allow front end to access pub
 app.use('/api', appRoutes); // Assign name to end points (e.g., '/api/management/', '/api/users' ,etc. )
 
 // DB CONNECTION
-mongoose.connect('mongodb://localhost:27017/website-node', function(err) {
+mongoose.connect('mongodb://webmean:Password1234#@ds161833.mlab.com:61833/website-mean', function(err) {
     if (err) {
         console.log('Not connected to the database: ' + err); // Log to console if unable to connect to database
     } else {

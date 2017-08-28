@@ -35,7 +35,7 @@ module.exports = function(app, passport){
   passport.use(new FacebookStrategy({
       clientID: '344360105987740',
       clientSecret: '68277dc19eecbf94b8d652d65af8a844',
-      callbackURL: "http://localhost:8080/auth/facebook/callback",
+      callbackURL: "https://fernando-website-mean.herokuapp.com/auth/facebook/callback",
       profileFields : ['id', 'displayName', 'photos', 'email']
     },
     function(accessToken, refreshToken, profile, done) {
@@ -54,7 +54,7 @@ module.exports = function(app, passport){
   passport.use(new TwitterStrategy({
     consumerKey: 'KIDp0GNxjzaLXbnkb8ExzDSO4',
     consumerSecret: 'DYCRrcZfzw7akIchKjKtcXfGgV2O3u83o6C08Fq6k6MESORi46',
-    callbackURL: "http://localhost:8080/auth/twitter/callback",
+    callbackURL: "https://fernando-website-mean.herokuapp.com/auth/twitter/callback",
     userProfileURL: "https://api.twitter.com/1.1/account/verify_credentials.json?include_email=true"
   },
   function(token, tokenSecret, profile, done) {
@@ -73,7 +73,7 @@ module.exports = function(app, passport){
   passport.use(new GoogleStrategy({
     clientID: '939707278918-ueoi8i7el65uiihmnn0mt595irqpjseq.apps.googleusercontent.com',
     clientSecret: 'hz-eiqtgymvqxPhGVIJwgIBG',
-    callbackURL: "http://localhost:8080/auth/google/callback"
+    callbackURL: "https://fernando-website-mean.herokuapp.com/auth/google/callback"
   },
   function(token, tokenSecret, profile, done) {
     User.findOne({ email: profile.emails[0].value}).select('username password email').exec(function(err, user){
